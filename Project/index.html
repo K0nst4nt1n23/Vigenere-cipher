@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Шифр Виженера</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <img class="wrapper__bg" src="img/bg.webp" alt="background">
+            <div class="interface">
+                <div class="key">
+                    <h2 class="key__title">Ключове слово</h2>
+                    <input class="key__input" id="keyInput" type="text" placeholder="Введіть ключове слово">
+                </div>
+                <div class="area__block">
+                    <div class="encrypt">
+                        <h2>Кодування</h2>
+                        <textarea name="textEncrypt" id="textareaEncrypt" cols="30" rows="10"
+                            placeholder="Введіть текст для кодування"></textarea>
+                            <div class="options">
+                                <a class="copy__enc">Copy</a>
+                                <a class="paste__enc">Paste</a>
+                                <a class="cut__enc">Cut</a>
+                                <a class="delete__enc">Delete</a>
+                            </div>
+                        <button class="button" id="buttonEnc">Виконати</button>
+                        <textarea name="resultEncrypt" id="resultEncrypt" cols="30" rows="10"
+                            placeholder="Тут буде результат кодування"></textarea>
+                            <div class="options">
+                                <a class="copy__enc">Copy</a>
+                                <a class="paste__enc">Paste</a>
+                                <a class="cut__enc">Cut</a>
+                                <a class="delete__enc">Delete</a>
+                            </div>
+                    </div>
+                    <div class="decrypt">
+                        <h2>Декодування</h2>
+                        <textarea name="textDecrypt" id="textareaDecrypt" cols="30" rows="10"
+                            placeholder="Введіть текст для декодування"></textarea>
+                            <div class="options">
+                                <a class="copy__enc">Copy</a>
+                                <a class="paste__enc">Paste</a>
+                                <a class="cut__enc">Cut</a>
+                                <a class="delete__enc">Delete</a>
+                            </div>
+                        <button class="button" id="buttonDec">Виконати</button>
+                        <textarea name="resultDecrypt" id="resultDecrypt" cols="30" rows="10"
+                            placeholder="Тут буде результат декодування"></textarea>
+                            <div class="options">
+                                <a class="copy__enc">Copy</a>
+                                <a class="paste__enc">Paste</a>
+                                <a class="cut__enc">Cut</a>
+                                <a class="delete__enc">Delete</a>
+                            </div>
+                    </div>
+                </div>
+                <a class="button__refresh" id="reload">Reset</a>
+            </div>
+        </div>
+        <script src="js/script.js">
+        </script>
+    </body>
+</html>
