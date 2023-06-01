@@ -160,26 +160,3 @@ placeholder.forEach(item => {
     });
 });
 //=================================================================================================
-// Кнопки options =================================================================================
-function copyText() {
-    var textarea = document.getElementById("textareaEncrypt");
-    textarea.select();
-    document.execCommand("copy");
-}
-
-function pasteText() {
-    var textarea = document.getElementById("textareaEncrypt");
-    textarea.focus();
-    document.execCommand("paste");
-}
-
-function cutText() {
-    var textarea = document.getElementById("textareaEncrypt");
-    textarea.select();
-    document.execCommand("cut");
-}
-
-function deleteText() {
-    var textarea = document.getElementById("textareaEncrypt");
-    textarea.value = "";
-}
